@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Quiz = () => {
   const [dataSoal, setDataSoal] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [questions, setQuestion] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -53,6 +54,7 @@ const Quiz = () => {
     }
 
     setLoading(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dataSoal]);
 
   useEffect(() => {
